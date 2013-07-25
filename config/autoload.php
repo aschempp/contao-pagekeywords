@@ -19,7 +19,9 @@
 
 
 /**
- * Fields
+ * Register the classes
  */
-$GLOBALS['TL_LANG']['tl_page']['keywords']   = array('Keywords', 'Hier können Sie eine Liste kommagetrennter Suchbegriffe eingeben, die von Suchmaschinen wie Google oder Yahoo ausgewertet werden. Suchmaschinen indizieren normalerweise bis zu 800 Zeichen.');
-
+ClassLoader::addClasses(array
+(
+	'PageKeywords' => 'system/modules/pagekeywords/PageKeywords.php'
+));
